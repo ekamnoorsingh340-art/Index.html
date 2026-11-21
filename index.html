@@ -2,242 +2,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ekamnoor Singh | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ekamnoor Singh | Official Website</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    body {
-      background: #090909;
-      color: #fff;
-      font-family: Arial, sans-serif;
-    }
+body {
+  background: #080808;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 25px 8%;
-      border-bottom: 1px solid #222;
-    }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  border-bottom: 1px solid #252016;
+  position: sticky;
+  top: 0;
+  background: rgba(8,8,8,0.95);
+  z-index: 10;
+}
 
-    .logo {
-      font-size: 21px;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-
-    nav a {
-      color: #aaa;
-      text-decoration: none;
-      margin-left: 22px;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #d5ae70;
-    }
-
-    .hero {
-      min-height: 85vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 30px 20px;
-    }
-
-    .tag {
-      color: #d5ae70;
-      letter-spacing: 5px;
-      font-size: 12px;
-      margin-bottom: 25px;
-    }
-
-    h1 {
-      font-size: clamp(42px, 9vw, 90px);
-      letter-spacing: 3px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      color: #aaa;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 35px;
-      padding: 14px 30px;
-      border: 1px solid #d5ae70;
-      color: #d5ae70;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #d5ae70;
-      color: #090909;
-    }
-
-    section {
-      padding: 85px 10%;
-      border-top: 1px solid #222;
-    }
-
-    h2 {
-      font-size: 32px;
-      margin-bottom: 25px;
-      color: #d5ae70;
-    }
-
-    .content {
-      color: #aaa;
-      line-height: 1.9;
-      max-width: 700px;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .project {
-      border: 1px solid #292929;
-      padding: 25px;
-      transition: 0.3s;
-    }
-
-    .project:hover {
-      border-color: #d5ae70;
-      transform: translateY(-5px);
-    }
-
-    .project h3 {
-      margin-bottom: 12px;
-    }
-
-    .project p {
-      color: #999;
-      line-height: 1.6;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #777;
-      border-top: 1px solid #222;
-    }
-
-    @media(max-width: 600px) {
-      nav {
-        padding: 20px 5%;
-      }
-
-      nav a {
-        margin-left: 10px;
-        font-size: 12px;
-      }
-
-      .logo {
-        font-size: 16px;
-      }
-    }
-    
-    #contact .btn {
-  display: inline-block !important;
-  background: #d5ae70;
-  color: #090909;
-  padding: 15px 30px;
-  border-radius: 4px;
+.logo {
+  color: #d5ae70;
+  font-size: 18px;
   font-weight: bold;
-    }
-    
-  </style>
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: #d5ae70;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 20px;
+  background: radial-gradient(
+    ellipse at center,
+    #211b11 0%,
+    #080808 65%
+  );
+}
+
+.tag {
+  color: #d5ae70;
+  letter-spacing: 6px;
+  font-size: 11px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: clamp(38px, 8vw, 85px);
+  letter-spacing: 4px;
+  animation: appear 1.5s ease;
+}
+
+.hero h2 {
+  color: #d5ae70;
+  font-size: clamp(17px, 3vw, 27px);
+  letter-spacing: 3px;
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+.hero p {
+  color: #888;
+  margin-top: 22px;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 15px 32px;
+  border: 1px solid #d5ae70;
+  color: #d5ae70;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #d5ae70;
+  color: #080808;
+}
+
+section {
+  padding: 90px 10%;
+  border-top: 1px solid #211d16;
+}
+
+h3 {
+  color: #d5ae70;
+  font-size: 28px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.content {
+  color: #999;
+  line-height: 2;
+  max-width: 720px;
+  font-size: 15px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.project {
+  background: #101010;
+  border: 1px solid #29231a;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+  border-color: #d5ae70;
+}
+
+.project h4 {
+  color: #d5ae70;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.project p {
+  color: #888;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border-top: 1px solid #211d16;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width: 600px) {
+  nav {
+    padding: 20px 5%;
+  }
+
+  nav a {
+    margin-left: 10px;
+    font-size: 11px;
+  }
+
+  .logo {
+    font-size: 13px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <nav>
-    <div class="logo">EKAMNOOR SINGH</div>
-    <div>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <div class="hero">
-    <div class="tag">WELCOME TO MY WORLD</div>
-
-    <h1>EKAMNOOR SINGH</h1>
-
-    <p>Driven by ambition. Defined by actions.</p>
-
-    <a href="#about" class="btn">DISCOVER MORE</a>
+<nav>
+  <div class="logo">EKAMNOOR SINGH</div>
+  <div>
+    <a href="#about">ABOUT</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
   </div>
+</nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p class="content">
-      Welcome to my personal space.
-      I'm Ekamnoor Singh, someone who believes
-      in ambition, continuous growth and creating
-      something meaningful.
-      This is where my journey begins.
-    </p>
-  </section>
+<div class="hero">
+  <div class="tag">WELCOME TO MY WORLD</div>
 
-  <section id="projects">
-    <h2>My Projects</h2>
+  <h1>EKAMNOOR SINGH</h1>
 
-    <div class="projects">
-      <div class="project">
-        <h3>Project 01</h3>
-        <p>My first personal website.</p>
-      </div>
+  <h2>Driven by ambition.<br>
+  Defined by actions.</h2>
 
-      <div class="project">
-        <h3>Project 02</h3>
-        <p>More creations coming soon.</p>
-      </div>
+  <p>A JOURNEY WITHOUT LIMITS.</p>
 
-      <div class="project">
-        <h3>Project 03</h3>
-        <p>Ideas waiting to become reality.</p>
-      </div>
+  <a href="#about" class="btn">EXPLORE MY WORLD →</a>
+</div>
+
+<section id="about">
+  <h3>ABOUT ME</h3>
+  <p class="content">
+    I believe in ambition, continuous growth and
+    creating something meaningful.
+
+    This website represents my journey, my ideas
+    and the things I create. There's always more
+    to learn, more to build and more to achieve.
+  </p>
+</section>
+
+<section id="projects">
+  <h3>MY PROJECTS</h3>
+
+  <div class="projects">
+    <div class="project">
+      <h4>01 / WEB DEVELOPMENT</h4>
+      <p>My journey into coding and building
+      digital experiences starts here.</p>
     </div>
-  </section>
+
+    <div class="project">
+      <h4>02 / SHADOWFRAME</h4>
+      <p>A creative space for cinematic edits
+      and visual storytelling.</p>
+    </div>
+
+    <div class="project">
+      <h4>03 / COMING SOON</h4>
+      <p>New ideas. New challenges.
+      More creations ahead.</p>
+    </div>
+  </div>
+</section>
 
 <section id="contact">
-  <h2>Get In Touch</h2>
-
+  <h3>GET IN TOUCH</h3>
   <p class="content">
     Have an idea, question or opportunity?
     Feel free to reach out.
   </p>
 
-  <a href="mailto:ekamnoorsingh340@gmail.com" class="btn">
-    CONTACT ME ✉
-  </a>
+  <a href="mailto:ekamnoorsingh340@gmail.com"
+     class="btn">CONTACT ME ✉</a>
 </section>
 
-  <footer>
-    © 2026 Ekamnoor Singh. All rights reserved.
-  </footer>
+<footer>
+  © 2026 EKAMNOOR SINGH. ALL RIGHTS RESERVED.
+</footer>
 
 </body>
 </html>
