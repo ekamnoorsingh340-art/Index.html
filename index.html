@@ -162,6 +162,36 @@ h3 {
   font-size: 14px;
 }
   
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.project-links a {
+  display: inline-block;
+  color: #d5ae70;
+  border: 1px solid #d5ae70;
+  padding: 9px 13px;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.project-links a:hover {
+  background: #d5ae70;
+  color: #080808;
+}
+
+.project-status {
+  color: #d5ae70;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
 .project img {
     width: 100%;
     height: auto;
@@ -248,29 +278,77 @@ footer {
   </p>
 </section>
 
+
 <section id="projects">
   <h3>MY PROJECTS</h3>
 
   <div class="projects">
+
     <div class="project">
       <h4>01 / WEB DEVELOPMENT</h4>
-      <p>My journey into coding and building
-      digital experiences starts here.</p>
+      <p>
+        My journey into coding and building
+        digital experiences starts here.
+      </p>
     </div>
-
-    
-<div class="project">
-    <img src="./IMG_20261121_220623.png" alt="Smart Classroom Automation System">
-    <h4>02 / SMART CLASSROOM AUTOMATION</h4>
-    <p>An Arduino-based automation system that counts classroom occupancy and automatically controls lights and fans using IR sensors and relay modules.</p>
-</div>
-
 
     <div class="project">
-      <h4>03 / COMING SOON</h4>
-      <p>New ideas. New challenges.
-      More creations ahead.</p>
+      <img src="./IMG_20261121_220623.png"
+           alt="Smart Classroom Automation System">
+
+      <h4>02 / SMART CLASSROOM AUTOMATION</h4>
+      <p>
+        An Arduino-based automation system that
+        counts classroom occupancy and automatically
+        controls lights and fans using IR sensors
+        and relay modules.
+      </p>
     </div>
+
+    <div class="project">
+      <h4>03 / AGRIYIELD PUNJAB</h4>
+      <p>
+        A long-term agriculture-focused project
+        exploring data and technology to support
+        better-informed farming decisions in Punjab.
+      </p>
+
+      <div class="project-status">
+        STATUS: IN DEVELOPMENT
+      </div>
+
+      <div class="project-links">
+        <a href="https://agriyield-punjab.pages.dev/"
+           target="_blank">LIVE PROJECT ↗</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h4>04 / AGRICULTURE YIELD PREDICTION</h4>
+      <p>
+        A machine learning project that predicts
+        agricultural crop yield using Random Forest
+        Regression and Indian agricultural data.
+      </p>
+
+      <div class="project-status">
+        MODEL: RANDOM FOREST REGRESSION
+      </div>
+
+      <p style="margin-top:12px;">
+        R² SCORE: 0.9719<br>
+        MAE: 8.3711
+      </p>
+
+      <div class="project-links">
+        <a href="https://github.com/ekamnoorsingh340-art/agriculture-yield-prediction"
+           target="_blank">GITHUB ↗</a>
+
+        <a href="https://agriculture-yield-prediction-zheolvwzb4p8qqkgwgnvtf.streamlit.app/"
+           target="_blank">LIVE DEMO ↗</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
